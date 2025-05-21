@@ -42,7 +42,7 @@ COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/public ./public
 
 # 12. Открываем порт
-EXPOSE 3000
+EXPOSE 4000
 
 # 13. Запускаем Next.js в продакшен-режиме
 CMD ["npm", "start"]
