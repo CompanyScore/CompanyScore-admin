@@ -19,6 +19,8 @@ export function CompaniesTable() {
     setSelectedCompany(company);
   };
 
+  console.log("test");
+
   useEffect(() => {
     useCompaniesStore.getState().getCompanies({});
   }, []);
