@@ -20,4 +20,4 @@ jobs:
             cd /opt/CompanyScore-admin
             git config pull.rebase false
             git pull origin main
-            docker compose up -d --build admin
+            docker compose up -d --build --pull always admin
