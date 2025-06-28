@@ -18,5 +18,6 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /opt/CompanyScore-admin
+            git config pull.rebase false
             git pull origin main
-            docker compose restart admin
+            docker compose up -d --build admin
